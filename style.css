@@ -1,0 +1,250 @@
+:root{
+    --primary-color: #1191fa;
+    --secondary-color: #fffb00;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0px;
+    background-color: var(--primary-color);
+    height: 70vh;
+    width: 70vw;
+
+}
+.grid-item{
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.toggleButton{
+    color: var(--secondary-color);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disabled{
+    pointer-events: none;
+opacity: 0.7;
+}
+.container{
+    position: relative;
+}
+.head{
+    font-size: 2rem;
+    color: #0a0808;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.result{
+    height: 8vh;
+    width: 70vw;
+    color: black;
+    border: #0a0808;
+    text-align: center;
+    margin-top: 15px;
+    background-color: antiquewhite;
+    position: relative;
+    bottom: -5px;
+}
+.reset{
+    
+    position: absolute;
+    right: 1vh;
+    bottom: 0px;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    border-style: none;
+    background-color: bisque;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); */
+    color: white;
+}
+.undo{
+    position: absolute;
+    left: 1vh;
+    bottom: 0px;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    border-style: none;
+    background-color: bisque;
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); */
+    /* fill: white; */
+}
+.img{
+    height: 80%;
+    width: 80%;
+    fill:#0a0808
+}
+@media screen and (min-width:300px){
+    .grid-container{
+        position: inherit;
+        
+    }
+
+
+    .footer{
+        height: 6vh;
+        width: 70vw;
+        font-size: 0.6rem;
+        background-color: bisque;
+        margin-top: 15px;
+        
+    }
+    .reset{
+        height: 6vw;
+        width: 6vw;
+        position: absolute;
+        bottom: 5px;
+    }
+    .undo{
+        height: 6vw;
+        width: 6vw;
+        position: absolute;
+        bottom: 5px;
+    }
+    .img_1{
+        height: 90%;
+        width: 90%;
+    }
+   
+}
+@media screen and (min-width:340px){
+    .grid-container{
+        height: 70vh;
+        width: 70vw;
+        position: inherit;
+    }
+
+    .result{
+        height: 6vh;
+        width: 70vw;
+        font-size: 0.6rem;
+        
+    }
+    .reset{
+        height: 6vw;
+        width: 6vw;
+        position: absolute;
+        bottom: 5px;
+    }
+    .undo{
+        height: 6vw;
+        width: 6vw;
+        position: absolute;
+        bottom: 5px;
+    }
+    
+}
+
+@media screen and (min-width:390px){
+    .grid-container{
+        height: 70vh;
+        width: 70vw;
+        position: inherit;
+    }
+
+    .result{
+        height: 6vh;
+        width: 70vw;
+        font-size: 0.6rem;
+        
+    }
+    .reset{
+        height: 5vw;
+        width: 5vw;
+        position: absolute;
+        
+    }
+    .undo{
+        height: 5vw;
+        width: 5vw;
+        position: absolute;
+        
+    }
+
+
+}
+@media screen and (min-width:490px){
+    .grid-container{
+        height: 70vh;
+        width: 70vw;
+        position: inherit;
+    }
+
+    .result{
+        height: 7vh;
+        width: 70vw;
+        font-size: 0.6rem;
+        
+    }
+    .reset{
+        height: 4vw;
+        width: 4vw;
+        position: absolute;
+        margin-bottom: 3px;
+        margin-bottom: -1px;
+        
+    }
+    .undo{
+        height: 4vw;
+        width: 4vw;
+        position: absolute;
+    
+        
+    }
+}
+@media screen and (min-width:600px){
+    .grid-container{
+        height: 352px;
+        width: 526px;
+        position: inherit;
+    }
+    .footer{
+        width: 526px;
+        height: 48px;
+    }
+
+    .result{
+    
+        font-size: 1rem;
+        
+    }
+    .reset{
+        height: 6vw;
+        width: 6vw;
+        position: absolute;
+        bottom: 2px;
+    }
+    .undo{
+        height: 6vw;
+        width: 6vw;
+        position: absolute;
+        bottom: 2px;
+    }
+    .img_1{
+        height: 50%;
+        width: 50%;
+    }
+    .img{
+        height: 50%;
+        width: 50%;
+    }
+}
+
