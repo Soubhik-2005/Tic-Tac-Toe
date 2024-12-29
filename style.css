@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
     
 }
 body{
@@ -93,15 +94,45 @@ opacity: 0.7;
     fill:#0a0808
 }
 @media screen and (min-width:300px){
+    
     .grid-container{
-        position: inherit;
+        height: 30vh;
         
     }
-
-
     .footer{
         height: 6vh;
         width: 70vw;
+        font-size: 0.6rem;
+        background-color: bisque;
+        margin-top: 15px;
+        
+    }
+    .reset{
+        height: 6vw;
+        width: 6vw;
+        position: absolute;
+        bottom: 5px;
+    }
+    .undo{
+        height: 6vw;
+        width: 6vw;
+        position: absolute;
+        bottom: 5px;
+    }
+
+}
+@media screen and (min-width:360px){
+    .container{
+        margin-bottom: 250px;
+    }
+    .grid-container{
+        height: 302px;
+        width: 328px;
+        
+    }
+    .footer{
+        height: 6vh;
+        width: 87vw;
         font-size: 0.6rem;
         background-color: bisque;
         margin-top: 15px;
@@ -123,41 +154,14 @@ opacity: 0.7;
         height: 90%;
         width: 90%;
     }
-   
 }
-@media screen and (min-width:340px){
-    .grid-container{
-        height: 70vh;
-        width: 70vw;
-        position: inherit;
-    }
-
-    .result{
-        height: 6vh;
-        width: 70vw;
-        font-size: 0.6rem;
-        
-    }
-    .reset{
-        height: 6vw;
-        width: 6vw;
-        position: absolute;
-        bottom: 5px;
-    }
-    .undo{
-        height: 6vw;
-        width: 6vw;
-        position: absolute;
-        bottom: 5px;
-    }
-    
-}
-
 @media screen and (min-width:390px){
+    .container{
+        margin-bottom: 347px;
+    }
     .grid-container{
-        height: 70vh;
-        width: 70vw;
-        position: inherit;
+        height: 40vh;
+        width: 87vw;
     }
 
     .result{
@@ -181,10 +185,48 @@ opacity: 0.7;
 
 
 }
-@media screen and (min-width:490px){
+@media screen and (min-width:410px){
+    .container{
+        margin-bottom: 400px;
+    }
     .grid-container{
-        height: 70vh;
-        width: 70vw;
+        height: 30vh;
+        width: 87vw;
+
+        /* position: inherit; */
+    }
+
+    .footer{
+        height: 5vh;
+        width: 86vw;
+        font-size: 0.6rem;
+        
+    }
+    .reset{
+        height: 7vw;
+        width: 7vw;
+
+       
+        margin-bottom: 5px;
+        
+    }
+    .undo{
+        height: 7vw;
+        width: 7vw;
+        position: absolute;
+        margin-bottom: 3px;
+    
+        
+    }
+}
+@media screen and (min-width:490px)
+{
+    .container{
+        margin-top: 13vh;
+    }
+    .grid-container{
+        height: 30vh;
+        width: 87vw;
         position: inherit;
     }
 
@@ -210,6 +252,7 @@ opacity: 0.7;
         
     }
 }
+
 @media screen and (min-width:600px){
     .grid-container{
         height: 352px;
@@ -248,32 +291,37 @@ opacity: 0.7;
     }
 }
 @media screen and (min-width:750px){
+    .container{
+        margin-bottom: 50vh;
+    }
     .grid-container{
-        position: inherit;
-        
+        height: 35vh;
+        width: 53vw;
     }
 
 
     .footer{
-        height: 8vh;
-        width: 527px;
+        height: 3vh;
+        width: 410px;
         font-size: 0.6rem;
         background-color: bisque;
         margin-top: 15px;
         
     }
     .reset{
-        height: 42px;
-        width: 42px;
+        height: 30px;
+        width: 30px;
         position: absolute;
-        bottom: -1px;
+        margin-bottom: -3px;
+
         right: -1px;
     }
     .undo{
-        height: 30px;
-        width: 31px;
+        height: 25px;
+        width: 25px;
         position: absolute;
-        bottom: 2px;
+        margin-bottom: -3px;
+
     }
     .img_1{
         height: 90%;
@@ -281,4 +329,80 @@ opacity: 0.7;
     }
    
 }
+@media screen and (min-width:820px){
+    .container{
+        margin-bottom: 65vh;
+    }
+    .grid-container{
+        height: 15vh;
+        width: 50vw;
+    }
+
+
+    .footer{
+        height: 3vh;
+        width: 410px;
+        font-size: 0.6rem;
+        background-color: bisque;
+        margin-top: 15px;
+        
+    }
+    .reset{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        bottom: 5px;
+        right: -1px;
+    }
+    .undo{
+        height: 25px;
+        width: 25px;
+        position: absolute;
+
+    }
+    .img_1{
+        height: 90%;
+        width: 90%;
+    }
+   
+}
+
+@media screen and (min-width:1000px){
+    .container{
+        margin-bottom: 65vh;
+    }
+    .grid-container{
+        height: 15vh;
+        width: 50vw;
+    }
+
+
+    .footer{
+        height: 3vh;
+        width: 512px;
+        font-size: 0.6rem;
+        background-color: bisque;
+        margin-top: 15px;
+        
+    }
+    .reset{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        bottom: 5px;
+        right: -1px;
+    }
+    .undo{
+        height: 25px;
+        width: 25px;
+        position: absolute;
+
+    }
+    .img_1{
+        height: 90%;
+        width: 90%;
+    }
+   
+}
+
 
